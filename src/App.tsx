@@ -7,9 +7,9 @@ import "./style.scss";
 export const App = () => {
   const {formatted, sortBy, filter, search} = useFormattedData(users);
   useEffect(() => {
-    search("10");
-    filter(({zip}) => zip < 1000);
-    sortBy("lastName");
+    search("anderson");
+    filter(({ zip }) => zip > 486);
+    sortBy("firstName");
   }, []);
 
   return (
